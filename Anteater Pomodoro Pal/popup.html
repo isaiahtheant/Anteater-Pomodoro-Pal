@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Anteater Pomodoro Pal</title>
+</head>
+<body>
+   
+    <!--Hides Audio Box-->
+    <style>
+        audio {
+            display: none;
+        }
+    </style>
+
+
+    <h1>Anteater Pomodoro Pal</h1>
+    <div id="container">
+        <audio id="buttonClickSound" src="sounds/ButtonClick.mp3" controls="false"></audio>
+       
+
+        <p id="work" class="label">Work:</p>
+        <p id= "break" class="label">Break:</p>
+        <p id="cycles" class="label">Cycles:</p>
+
+
+        <!-- Work Timer -->
+<div id="work-timer" class="timer">
+    <p id="w_minutes">--</p><p class="semicolon">:</p><p id="w_seconds">--</p>
+</div>
+
+<!-- Cycle Counter -->
+<p id="counter" class="timer">0</p>
+
+<!-- Break Timer -->
+<div id="break-timer" class="timer">
+    <p id="b_minutes">--</p><p class="semicolon">:</p><p id="b_seconds">--</p>
+</div>
+
+
+        <!-- Buttons in container -->
+        <button id="start" class="btn">Start</button>
+        <button id="stop" class="btn">Pause</button>
+        <button id="reset" class="btn">Reset</button>
+    </div>
+
+    <script src="popup.js"></script>
+    <script src="background.js"></script>
+</body>
+</html>
